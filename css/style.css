@@ -8,9 +8,13 @@
 /* ----header start----- */
 html{
     scroll-behavior: smooth;
+    transition-duration:2s;
 }
 body{
     overflow-x:hidden;
+}
+ul li{
+    list-style:none;
 }
 
 .title-text{
@@ -28,6 +32,7 @@ body{
     text-transform:uppercase;
     text-decoration:none;
     color:#fff;
+    display: inline-block;
 }
 .buttons-2 a{
     border:2px solid #0bbc5c;
@@ -35,6 +40,7 @@ body{
     letter-spacing:2px;
     text-transform:uppercase;
     text-decoration:none;
+    display: inline-block;
     color:#0bbc5c;
 }
 .btn-one:hover{
@@ -138,11 +144,18 @@ body{
     opacity:1;
 }
 /* ----footer--- */
+.footers-title{
+    z-index:1;
+}
 .footer{
     position:relative;
     background:#000;
     overflow:hidden;
     padding:100px 0px;
+    z-index:1;
+}
+.shape{
+    z-index:-1;
 }
 .footer-desc{
     color:#464343;
@@ -227,6 +240,86 @@ body{
     background:#232323;
     transform:skew(-10deg);
 }
+
+/* -------media---- */
+@media only screen and (max-width: 1200px){
+    .span-box-4{
+        opacity:0;
+    }
+}
+@media only screen and (max-width: 992px){
+    .title-text {
+        font-size: 40px;
+        line-height: 54px;
+    }
+    .span-box-1{
+        width:100px;
+        height:100px;
+        top:10%;
+        left:1%;
+    }
+    .span-box-3{
+        width:100px;
+        height:100px;
+        top:10%;
+        right:1%;
+    }
+    .span-box-2,.span-box-4{
+        width:40px;
+        height:30px;
+        top:100px;
+        right:200px;
+    }
+    .span-box-top{
+        width:100px;
+        height:80px;
+        top:-5%;
+        right:5%;
+    }
+    
+}
+@media only screen and (max-width:768px){
+    .buttons a {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .small-text{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .span-box-1{
+        width:100px;
+        height:100px;
+        top:10%;
+        left:1%;
+    }
+    .span-box-3{
+        width:100px;
+        height:100px;
+        top:10%;
+        right:1%;
+    }
+    .span-box-2,.span-box-4{
+        width:40px;
+        height:30px;
+        top:100px;
+        right:200px;
+    }
+    .span-box-top{
+        width:100px;
+        height:80px;
+        top:-5%;
+        right:5%;
+    }
+}
+@media (min-width: 576px){
+    .buttons a {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    
+}
+
    
 
 
